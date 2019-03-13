@@ -11,7 +11,8 @@
 
 // Your code :
 
-let abs = (a) => (a > 0)? a : -a
+
+let abs = (a) => (a >= 0)? a : -a
 
 //* Begin of tests
 const assert = require('assert')
