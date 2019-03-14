@@ -8,7 +8,8 @@
  */
 
 // Your code :
-
+let getLast = [];
+return (getLast.last);
 //* Begin of tests
 const assert = require('assert')
 

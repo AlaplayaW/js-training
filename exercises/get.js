@@ -14,6 +14,10 @@ const sourceObject = {
   str: 'some text',
   log: console.log,
 }
+let get = (key) => sourceObject[key];
+// function get(key) {
+//   return sourceObject[key]
+// }
 
 // Your code :
 
