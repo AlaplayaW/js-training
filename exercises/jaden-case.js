@@ -10,10 +10,19 @@
  *
  */
 
+function jadenCase(string) {
+  let tab = string.split(" ");
+  for (var m in tab) {
+    tab[m] = tab[m].substr(0, 1).toUpperCase() + tab[m].substr(1, tab[m].length).toLowerCase();
+  }
+  string = tab.join(" ");
+  return (string);
+}
 
 
 //* Begin of tests
 const assert = require('assert')
-
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof jadenCase, 'function')
+assert.strictEqual(jadenCase.length, 1)
+assert.strictEqual(jadenCase('coucou les gEns'), 'Coucou Les Gens')
 // End of tests */
